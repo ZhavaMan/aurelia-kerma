@@ -1,0 +1,199 @@
+.menu
+  width 231px
+  height 100%
+  display inline-block
+  background-color #333A41
+  padding-left: 0px;
+  margin-top: 0px;
+  
+  .menu-summary
+    height 100px
+    display flex
+    align-items center
+    justify-content center
+    
+    .summary-button
+      width 105px
+      height 30px
+      background-color #333A41
+      border 1px solid #979797
+      border-radius 100px
+      color #ffffff
+      font-size .75em
+      letter-spacing 1px
+      cursor pointer
+      
+    .summary-button:hover, .in-summary
+      background-color #BB0150
+      border 0
+  
+  .sections
+    color #9B9B9B
+    
+    &:last-child
+      margin-bottom 25px
+    
+    .title
+      display flex 
+      align-items center
+      justify-content center
+      padding 0 14px
+      letter-spacing 1px
+      
+      .decorate
+        height 1px
+        background-color #424b54
+        width 100%
+        display inline-block
+        
+      span
+        color #ffffff
+        font-size .87em
+        margin 0 16px
+        line-height 44px
+    
+    .hidden
+      display none
+    
+    .section 
+      .category
+        overflow hidden
+        transition all 0.25s ease
+        will-change height
+        
+        p
+          font-size .87em
+          display inline-block
+          margin 0 0 1px 0
+        
+        p.professionals-nolawyers
+          font-size .8em
+
+        a
+          color #9B9B9B
+          
+        .cat-title
+          position relative
+          user-select none
+          display flex
+          align-items center
+          padding 0 30px;
+          height 45px
+          cursor pointer
+        
+          .active
+            background-color #BB0150
+            width 6px
+            height 100%
+            position absolute
+            left 0
+            display none
+          
+          svg
+            margin-right 17px
+          
+          img
+            margin-right 17px
+          
+          &:hover, &.in-page
+            background-color #788C9D
+            color #ffffff
+            
+            .active 
+              display inline
+                      
+            svg path
+              fill #ffffff
+        
+         .subcategory
+            padding-left 20px
+            visibility visible
+            opacity 1
+            transition visibility 0s linear 0s, opacity 300ms
+          
+          ul
+            margin-bottom 10px
+            
+            li:hover
+              color #fff
+          
+          .subcat
+            margin-bottom 6px
+            
+            &:last-child
+              margin-bottom 0
+          
+          .inpage
+            color #fff
+          
+        .info
+          svg 
+            width 12.8px
+            height 12.8px
+            
+        .income 
+          svg
+            width 17px
+            height 11px
+        
+        .professionals
+          svg
+            width 17px
+            height 11px
+        
+        .operation-lawyers
+          p
+            font-size .83em
+          
+          svg
+            width 15px
+            height 15px
+        
+        .administratives
+          svg
+            width 15px
+            height 15px
+          
+        .structure
+          svg
+            width 15px
+            height 16px
+          
+        .bonds
+          svg
+            width 12px
+            height 12px
+          
+        .mercha-and-promotion
+          svg
+            width 15px
+            height 11px
+          
+        .ti
+          svg
+            width 18px
+            height 15px
+        
+        .increments
+          svg
+            width 15px
+            height 13px
+        
+        .benefits
+          svg
+            width 10px
+            height 17px
+        
+        .other-benefits
+          svg
+            width 13px
+            height 12px
+          
+    .divider 
+      padding 0 14px
+      
+      .stroke
+        height 1px
+        background-color #424b54
+        width 100%
+        margin 20px 0

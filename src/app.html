@@ -1,0 +1,19 @@
+  <template>
+<require from="./main.css"></require>
+<require from="./components/header/header.html"></require>
+<require from="./components/nav-menu/nav-menu.html"></require>
+<require from="./components/footer/footer.html"></require>
+  <div id="page">
+    <header></header>
+    <main id="main">
+      <nav-menu router.bind="router"></nav-menu>
+      <div class="container">
+        <div class="content">
+          
+          <router-view></router-view>
+        </div>
+        <footer class="footer"></footer>
+      </div>
+    </main>
+  </div>
+</template>
