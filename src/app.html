@@ -1,15 +1,14 @@
-  <template>
+<template>
 <require from="./main.css"></require>
-<require from="./components/header/header.html"></require>
-<require from="./components/nav-menu/nav-menu.html"></require>
-<require from="./components/footer/footer.html"></require>
+<require from="./components/header/header"></require>
+<require from="./components/navmenu/navmenu"></require>
+<require from="./components/footer/footer"></require>
   <div id="page">
     <header></header>
     <main id="main">
-      <nav-menu router.bind="router"></nav-menu>
+      <navmenu router.bind="router"></navmenu>
       <div class="container">
         <div class="content">
-          
           <router-view></router-view>
         </div>
         <footer class="footer"></footer>
