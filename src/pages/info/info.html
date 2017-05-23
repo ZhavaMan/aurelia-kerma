@@ -1,0 +1,127 @@
+<template>
+  <div class="step-bubbles kerma-fonts-opensans">
+    <div class="bubble step-in"><p>1</p></div>
+  </div>
+  <h1 class="kerma-fonts-opensans-light">Datos de la firma</h1>
+  <h2 class="kerma-fonts-opensans-light">Información general</h2>
+  <form action="">
+    <div class="info-row first" repeat.for="question of questions">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="firm-name">${question.pregunta}</label>
+      </div>
+      <div class="input-container">
+        <input name="firm-name" type="text" class="firm-name kerma-fonts-opensans" id="firm-name" placeholder="Ej. Landa Alcocer">
+      </div>
+    </div>
+    <div class="info-row first">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="firm-name">Nombre de la firma</label>
+      </div>
+      <div class="input-container">
+        <input name="firm-name" type="text" class="firm-name kerma-fonts-opensans" id="firm-name" placeholder="Ej. Landa Alcocer">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="adress">Dirección (Calle y número)</label>
+      </div>
+      <div class="input-container">
+        <input name="adress" id="adress" type="text" class="kerma-fonts-opensans" placeholder="Ej. Lago Margarita 25">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="zip-code">Código Postal</label>
+      </div>
+      <div class="input-container zip-code">
+        <input name="zip-code" id="zip-code" type="text" class="kerma-fonts-opensans" placeholder="Ej. 06700">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="suburb">Colonia</label>
+      </div>
+      <div class="input-container select-container">
+        <select name="suburb" id="suburb" class="kerma-fonts-opensans">
+          <option value="">Ej. Granada</option>
+          <option value="San Juan de Aragon">San Juan de Aragón</option>
+        </select>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="city">Ciudad</label>
+      </div>
+      <div class="input-container">
+        <input name="city" id="city" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. Ciudad de México">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="state">Estado</label>
+      </div>
+      <div class="input-container">
+        <input name="state" id="state" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. Estado de México">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="tel-number">Teléfono</label>
+      </div>
+      <div class="input-container">
+        <input name="tel-number" id="tel-number" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. 55 3425 2716">
+      </div>
+    </div>
+    <div class="info-row divider">
+      <div class="input-description">
+      </div>
+      <div class="input-container">
+        <div class="info-divider"></div>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="filling-responsable">Responsable de llenado</label>
+      </div>
+      <div class="input-container">
+        <input name="filling-responsable" id="filling-responsable" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. Juan Antonio López">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="filling-email">Correo electrónico</label>
+      </div>
+      <div class="input-container">
+        <input name="filling-email" id="filling-email" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. jlopez@firma.com">
+      </div>
+    </div>
+    <div class="info-row divider">
+      <div class="input-description">
+      </div>
+      <div class="input-container">
+        <div class="info-divider"></div>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="responsible-partner">Socio responsable</label>
+      </div>
+      <div class="input-container">
+        <input name="responsible-partner" id="responsible-partner" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. Arturo Martínez">
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="res-partner-email">Correo electrónico</label>
+      </div>
+      <div class="input-container">
+        <input name="res-partner-email" id="res-partner-email" type="text" class="firm-name kerma-fonts-opensans" placeholder="Ej. amtz@gmail.com">
+      </div>
+    </div>
+    <div class="info-row button">
+      <div class="kerma-button kerma-fonts-opensans">
+        <button>Siguiente</button>
+      </div>
+    </div>
+  </form>
+</template>
