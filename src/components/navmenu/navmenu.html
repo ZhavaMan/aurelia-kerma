@@ -1,0 +1,226 @@
+<template bindable="router">
+  <section class="menu">
+    <div class="menu-summary">
+      <a route-href="route:summary">
+        <button class="summary-button  kerma-fonts-opensans-light">RESUMEN</button>
+      </a>
+    </div>
+    <div class="sections">
+      <div class="title">
+        <div class="decorate"></div>
+        <span class="kerma-fonts-opensans-light">SECCIONES</span>
+        <div class="decorate"></div>
+      </div>
+      <div class="section">
+        <div class="category">
+          <a route-href="route:info">
+            <div class="cat-title info ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" class="svg replaced-svg">
+                <path fill="#788C9D" fill-rule="evenodd" d="M6.402 0a6.402 6.402 0 1 0 0 12.803A6.402 6.402 0 0 0 6.402 0zm-.15 2.1a1.12 1.12 0 1 1 0 2.238 1.12 1.12 0 0 1 0-2.238zm2.008 7.94H4.672v-.258c.238-.043.407-.08.508-.112a.788.788 0 0 0 .256-.131.542.542 0 0 0 .165-.258c.039-.116.06-.297.06-.543V6.44c0-.225-.007-.406-.02-.542a.556.556 0 0 0-.127-.33.668.668 0 0 0-.334-.184 4.281 4.281 0 0 0-.636-.103v-.28l2.132-.047h.559v3.768c0 .302.024.512.073.63a.51.51 0 0 0 .279.268c.137.062.361.115.673.161v.259z"></path>
+              </svg>
+              <p class="kerma-fonts-opensans">Información general</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="stroke"></div>
+      </div>
+      <div class="section">
+        <div class="category">
+          <div class="cat-title income ">
+            <div class="active"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" class="svg replaced-svg">
+                <g fill="#788C9D" fill-rule="evenodd">
+                    <path d="M0 10.936h16.743V0H0v10.936zM1.932.644h14.166v9.649H1.932V.643z"></path>
+                    <path d="M5 2.93h5.152V1H5v1.93zm.644-1.287h3.863v.643H5.644v-.643zM2 5.643h12.879V5H2zM3 6.643h9.66V6H3zM6 9.643h3.864V9H6z"></path>
+                </g>
+            </svg>
+            <p class="kerma-fonts-opensans">Ingresos Cobranza</p>
+          </div>
+          <div class="subcategory income visible animated hidden">
+            <ul class="income-collection kerma-fonts-opensans">
+              <div class="subcat">
+                <a href="/income-collection_income.html">
+                  <li class=""><p>Ingresos</p></li>
+                </a>            
+              </div>
+              <div class="subcat">
+                <a href="/income-collection_collection.html">
+                  <li class=""><p>Cobranza</p></li>
+                </a>
+              </div>
+              <div class="subcat">
+                <a href="/income-collection_offices.html">
+                  <li class=""><p>Oficinas</p></li>
+                </a>            
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="stroke"></div>
+      </div>
+      <div class="section">
+        <div class="category">
+          <div class="cat-title professionals ">
+            <div class="active"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" class="svg replaced-svg">
+              <g fill="#788C9D" fill-rule="evenodd">
+                  <path d="M2.194 2.7c0 1.45 1.202 2.63 2.678 2.63 1.478 0 2.68-1.18 2.68-2.63S6.348.07 4.871.07 2.194 1.25 2.194 2.7zM8.662 7.588a3.422 3.422 0 0 0-2.322-.905H3.405C1.527 6.682 0 8.181 0 10.024h6.758a4.431 4.431 0 0 1 1.904-2.437zM9.449 3.605c0 1.45 1.202 2.63 2.678 2.63 1.478 0 2.68-1.18 2.68-2.63s-1.203-2.63-2.68-2.63-2.678 1.18-2.678 2.63z"></path>
+                  <path d="M13.595 7.587H10.66c-1.878 0-3.405 1.5-3.405 3.343H17c0-1.844-1.527-3.343-3.405-3.343z"></path>
+              </g>
+            </svg>
+            <p class="kerma-fonts-opensans">Profesionales</p>
+          </div>
+          <div class="subcategory income visible animated hidden">
+            <ul class="income-collection kerma-fonts-opensans">
+              <div class="subcat">
+                <a href="/professionals_partners.html">
+                  <li class=""><p>Socios</p></li>
+                </a>            
+              </div>
+              <div class="subcat">
+                <a href="/professionals_rate-lawyers.html">
+                  <li class=""><p>Abogados Tarifa</p></li>
+                </a>
+              </div>
+              <div class="subcat">
+                <a href="/professionals_yexperience-lawyers.html">
+                  <li class=""><p>Abogados años de exp.</p></li>
+                </a>            
+              </div>
+              <div class="subcat">
+                <a href="/professionals_professionals-nolawyers.html">
+                  <li class=""><p class="professionals-nolawyers">Profesionales No Abogados</p></li>
+                </a>            
+              </div>
+              <div class="subcat">
+                <a href="/professionals_interns.html">
+                  <li class=""><p>Pasantes</p></li>
+                </a>            
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="category">
+          <a href="operation-lawyers.html">
+            <div class="cat-title operation-lawyers ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="svg replaced-svg">
+                <g fill="#788C9D" fill-rule="evenodd">
+                    <path d="M.37 12.699h14.278c.133 0 .241.108.241.241v1.776a.242.242 0 0 1-.241.242H.37a.241.241 0 0 1-.242-.242V12.94c0-.133.108-.241.242-.241zM.624 3.135a.225.225 0 0 0 .098-.021L7.51.071l6.788 3.043a.236.236 0 0 0 .098.021h.232c.133 0 .242.108.242.242v.687c0 .132-.108.24-.242.24H.392a.24.24 0 0 1-.24-.24v-.688c0-.134.108-.242.24-.242l.232.001M1.154 4.944H2.3a.24.24 0 0 1 .24.242v6.697a.24.24 0 0 1-.24.24H1.154a.241.241 0 0 1-.24-.24V5.185a.24.24 0 0 1 .24-.24zM5.008 4.944h1.148c.132 0 .24.108.24.242v6.697a.241.241 0 0 1-.24.24H5.008a.241.241 0 0 1-.24-.24V5.185a.24.24 0 0 1 .24-.24zM8.862 4.944h1.148c.132 0 .24.108.24.242v6.697a.241.241 0 0 1-.24.24H8.862a.241.241 0 0 1-.24-.24V5.185a.24.24 0 0 1 .24-.24zM12.717 4.944h1.148c.132 0 .24.108.24.242v6.697a.241.241 0 0 1-.24.24h-1.148a.241.241 0 0 1-.242-.24V5.185c0-.133.109-.24.242-.24z"></path>
+                </g>
+              </svg>
+              <p class="kerma-fonts-opensans">Operación - Abogados</p>
+            </div>
+          </a>
+        </div>
+        <div class="category">
+          <a href="administratives.html">
+            <div class="cat-title administratives ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="svg replaced-svg">
+                <path fill="#788C9D" fill-rule="evenodd" d="M12.084 10.285l2.428.148L15 8.272l-2.25-.96a5.505 5.505 0 0 0-.368-1.697l1.628-1.851-1.346-1.742-2.131 1.203a5.193 5.193 0 0 0-1.545-.766L8.584 0H6.418l-.404 2.46a5.149 5.149 0 0 0-1.53.755L2.358 2.004 1.006 3.74l1.621 1.856c-.21.53-.338 1.099-.374 1.697L0 8.244l.48 2.164 2.427-.139c.28.51.64.967 1.06 1.358l-.682 2.4 1.95.965 1.41-2.037c.28.05.564.078.856.078.286 0 .564-.029.838-.074L9.742 15l1.952-.96-.672-2.4a5.341 5.341 0 0 0 1.062-1.355zm-7.216-2.65c0-1.49 1.179-2.699 2.633-2.699s2.633 1.21 2.633 2.699c0 1.49-1.18 2.7-2.633 2.7-1.454 0-2.633-1.21-2.633-2.7z"></path>
+              </svg>
+              <p class="kerma-fonts-opensans">Administrativos</p>
+            </div>
+          </a>
+        </div>
+        <div class="category">
+          <a href="structure.html">
+            <div class="cat-title structure ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" class="svg replaced-svg">
+                <path fill="#788C9D" fill-rule="evenodd" d="M14.186 9.45h-1.702V7.725a.571.571 0 0 0-.568-.575H7.944V6h1.702a.571.571 0 0 0 .568-.575v-4.6A.571.571 0 0 0 9.646.25h-4.54a.571.571 0 0 0-.567.575v4.6c0 .318.254.575.568.575h1.702v1.15H2.837a.571.571 0 0 0-.567.575V9.45H.567a.571.571 0 0 0-.567.575v4.6c0 .318.254.575.567.575h4.54a.571.571 0 0 0 .567-.575v-4.6a.571.571 0 0 0-.567-.575H3.405V8.3h7.944v1.15H9.646a.571.571 0 0 0-.567.575v4.6c0 .318.254.575.567.575h4.54a.571.571 0 0 0 .567-.575v-4.6a.571.571 0 0 0-.567-.575zM5.674 1.4H9.08v3.45H5.674V1.4zM4.54 14.05H1.135V10.6h3.404v3.45zm9.08 0h-3.405V10.6h3.404v3.45z"></path>
+              </svg>
+              <p class="kerma-fonts-opensans">Estr. Admin.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="stroke"></div>
+      </div>
+      <div class="section">
+        <div class="category">
+          <a href="bonds.html">
+            <div class="cat-title bonds ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="svg replaced-svg">
+                <path fill="#788C9D" fill-rule="evenodd" d="M5.989.511a5.502 5.502 0 0 0-3.89 9.39 5.502 5.502 0 0 0 9.39-3.89 5.502 5.502 0 0 0-5.5-5.5zM8.395 6.7H6.676v1.718H5.301V6.7H3.583V5.324H5.3v-1.72h1.375v1.72h1.72v1.375z"></path>
+              </svg>
+              <p class="kerma-fonts-opensans">Bonos Incentivos</p>
+            </div>
+          </a>
+        </div>
+        <div class="category">
+          <a href="mercha-and-promotion.html">
+            <div class="cat-title mercha-and-promotion">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11" class="svg replaced-svg">
+                <g fill="#788C9D" fill-rule="evenodd">
+                    <path d="M14.89 3.517L12.568.157H2.432L.11 3.517c0 .75.675 1.383 1.478 1.383.802 0 1.479-.593 1.479-1.383 0 .75.675 1.383 1.478 1.383.802 0 1.478-.593 1.478-1.383 0 .75.676 1.383 1.479 1.383.802 0 1.478-.593 1.478-1.383 0 .75.675 1.383 1.478 1.383.802 0 1.479-.593 1.479-1.383 0 .75.675 1.383 1.478 1.383.8 0 1.475-.593 1.475-1.382zM13.412 6.48c-.464 0-.886-.08-1.266-.237v3.003H2.854V6.243c-.38.158-.802.237-1.266.237-.127 0-.296 0-.422-.04v4.386h12.668V6.44c-.126.04-.295.04-.422.04z"></path>
+                </g>
+              </svg>
+              <p class="kerma-fonts-opensans">Merca y Promoción</p>
+            </div>
+          </a>
+        </div>
+        <div class="category">
+          <a href="ti.html">
+            <div class="cat-title ti ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" class="svg replaced-svg">
+                <g fill="#788C9D" fill-rule="evenodd">
+                    <path d="M4.355 11.389L.15 7.317l4.204-4.089L5.44 4.385l-3.087 2.95 3.087 2.914zM7.74 14.839H6.356l3.68-14.68h1.37zM13.695 11.389l-1.101-1.174 3.086-2.932-3.086-2.932 1.1-1.123 4.188 4.073z"></path>
+                </g>
+              </svg>
+              <p class="kerma-fonts-opensans">TI</p>
+            </div>
+          </a>
+        </div>
+        <div class="category">
+          <a href="increments.html">
+            <div class="cat-title increments ">
+              <div class="active"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" class="svg replaced-svg">
+                <path fill="#788C9D" fill-rule="evenodd" d="M5.79 3.005l2.764.626 3.891-2.552.307.532.811-1.6-1.704.05.307.532-3.71 2.433-2.764-.625L.543 5.776l.28.486L5.79 3.005zm-.887 5.36v.79c0 .41.949.87 2.22.87 1.271 0 2.22-.46 2.22-.87v-.79c-.451.36-1.258.592-2.22.592-.962 0-1.768-.231-2.22-.593zm0 2.973v.79c0 .412.949.872 2.22.872 1.271 0 2.22-.46 2.22-.871v-.79c-.451.36-1.258.592-2.22.592-.962 0-1.768-.231-2.22-.593zm4.902-6.643c0 .41.949.871 2.22.871 1.271 0 2.22-.46 2.22-.871 0-.41-.949-.87-2.22-.87-1.27 0-2.22.46-2.22.87zM0 11.339v.791c0 .41.95.87 2.22.87 1.272 0 2.221-.46 2.221-.87v-.791c-.452.36-1.259.593-2.22.593-.962 0-1.768-.232-2.221-.593zM2.22 9.77c-1.27 0-2.22.46-2.22.87 0 .412.95.872 2.22.872 1.272 0 2.221-.46 2.221-.871 0-.41-.95-.87-2.22-.87zm2.683.08v.79c0 .412.949.872 2.22.872 1.271 0 2.221-.46 2.221-.871V9.85c-.452.361-1.26.593-2.221.593-.962 0-1.768-.231-2.22-.593zm4.902-2.973v.79c0 .412.949.872 2.22.872 1.271 0 2.221-.46 2.221-.871v-.791c-.452.361-1.26.593-2.221.593-.96 0-1.767-.232-2.22-.593zm0 1.486v.79c0 .412.949.872 2.22.872 1.271 0 2.221-.46 2.221-.871v-.79c-.452.36-1.26.592-2.221.592-.96 0-1.767-.23-2.22-.593zM7.123 6.797c-1.271 0-2.22.46-2.22.871s.949.871 2.22.871c1.271 0 2.221-.459 2.221-.871 0-.41-.95-.87-2.221-.87zm2.682-1.406v.791c0 .41.949.87 2.22.87 1.271 0 2.221-.459 2.221-.87v-.791c-.452.361-1.26.593-2.221.593-.96 0-1.767-.232-2.22-.593zm0 4.46v.791c0 .41.949.871 2.22.871 1.271 0 2.221-.46 2.221-.87V9.85c-.452.36-1.26.593-2.221.593-.96 0-1.767-.232-2.22-.593zm0 1.487v.791c0 .41.949.871 2.22.871 1.271 0 2.221-.46 2.221-.87v-.792c-.452.362-1.26.593-2.221.593-.96 0-1.767-.231-2.22-.593z"></path>
+              </svg>
+              <p class="kerma-fonts-opensans">Incrementos</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="stroke"></div>
+      </div>
+        <div class="section">
+          <div class="category">
+            <a href="benefits.html">
+              <div class="cat-title benefits ">
+                <div class="active"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" class="svg replaced-svg">
+                  <path fill="#788C9D" fill-rule="evenodd" d="M2.04.61C.918.61 0 1.528 0 2.65v11.56c0 1.122.918 2.04 2.04 2.04h5.44c1.122 0 2.04-.918 2.04-2.04V2.65c0-1.122-.918-2.04-2.04-2.04H2.04zm0 1.02h5.44c.455 0 .83.278.967.68H1.073c.136-.402.512-.68.967-.68zm-1.02 1.7H8.5v9.18H1.02V3.33zm0 10.2H8.5v.68c0 .574-.446 1.02-1.02 1.02H2.04c-.574 0-1.02-.446-1.02-1.02v-.68zm2.55.34a.51.51 0 0 0 0 1.02h2.38a.51.51 0 0 0 0-1.02H3.57z"></path>
+                </svg>
+                <p class="kerma-fonts-opensans">Prestaciones</p>
+              </div>
+            </a>
+          </div>
+          <div class="category">
+            <a href="other-benefits.html">
+              <div class="cat-title other-benefits ">
+                <div class="active"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" class="svg replaced-svg">
+                  <path fill="#788C9D" fill-rule="evenodd" d="M12.038 4.98a1.145 1.145 0 0 0-.208-.22l-1.066-3.602a.807.807 0 0 0-.767-.572H2.73a.796.796 0 0 0-.767.572L.91 4.76c-.065.052-.13.13-.208.221C.234 5.552 0 6.28 0 7.02v2.536c0 .22.182.403.403.403h1.092v1.456c0 .325.26.585.585.585h.455c.325 0 .585-.26.585-.585V9.959h6.526v1.456c0 .325.26.585.585.585h.455c.325 0 .585-.26.585-.585V9.959h.923c.312 0 .572-.26.572-.572V7.008c-.026-.728-.26-1.456-.728-2.028zM2.756 1.405h7.24l.963 3.263H1.794l.962-3.263zM2.3 8.23a.905.905 0 0 1-.91-.91c0-.507.403-.91.91-.91s.91.403.91.91-.403.91-.91.91zm8.138 0a.905.905 0 0 1-.91-.91c0-.507.403-.91.91-.91.494 0 .91.403.91.91a.921.921 0 0 1-.91.91z"></path>
+                </svg>
+                <p class="kerma-fonts-opensans">Otras prestaciones</p>
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
+</template>
