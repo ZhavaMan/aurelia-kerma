@@ -11,7 +11,6 @@ export class Info {
     httpClient.get('http://demo6292426.mockable.io/professionales-blick')
     .then(data => {
       this.questions = JSON.parse(data.response);
-      console.log(this.questions)
     });
   }
 }
