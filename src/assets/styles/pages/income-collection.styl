@@ -1,0 +1,228 @@
+.income-row
+  min-width 287px
+  font-size .83em
+  letter-spacing -.4px
+  margin-bottom 15px
+  display flex
+  align-items center
+  width 344px
+  margin-left auto
+  margin-right auto
+  
+  &.first, &.last
+    margin-top 60px
+  
+  .input-description
+    display inline-block
+    margin-right 23px
+    min-width 200px
+    max-width 200px
+    text-align right
+    color #4a4a4a
+
+  .input-container
+    display inline-block
+    position relative
+    width 90px
+    max-width 600px
+    
+    input[type="text"]
+      box-sizing border-box
+      min-width 90px
+      height 38px
+      width 100%
+      border 1px solid #dedede  
+      border-radius 1px
+      color #9b9b9b
+      padding 11px 20px
+      text-align center
+    
+    label
+      position absolute
+      top 10px
+      left 32px
+      color #9b9b9b
+      pointer-events none
+      transition 0.2s ease all
+    
+    input:focus ~ label, input:valid ~ label
+      left 102px
+      font-size 1.05em
+    
+    .tool-tip
+      width 16px
+      height 16px
+      display inline-block
+      position absolute
+      top 11px
+      left 102px
+      background-color #d8d8d8
+      border-radius 50%
+      color white
+      text-align center
+      line-height 16px
+      cursor default
+      transition 0.2s all ease
+    input:focus ~ .tool-tip, input:valid ~ .tool-tip
+        left 118px
+    .tool-tip:hover ~ .tool-tip-content
+        display inline-block
+        
+    .tool-tip-content
+      display none
+      position absolute
+      top 27px
+      left 102px
+      min-width 140px
+      font-size 10px
+      background-color #f3f3f4
+      padding 5px 11px
+      cursor default
+      p
+        margin 0
+        text-align left
+        color #4a4a4a
+      &:hover
+        display inline-block
+    &.usd
+      label
+        left 32px
+      input:focus ~ .tool-tip, input:valid ~ .tool-tip
+        left 136px
+    &.percentage
+      input:focus ~ .tool-tip, input:valid ~ .tool-tip
+        left 118px
+      label
+        left 40px
+    &.sqrmtrs
+      label
+        left 39px
+      input:focus ~ .tool-tip, input:valid ~ .tool-tip
+        left 128px
+  
+  &.group-2
+    height 54px
+    width 498px
+    .input-description
+      min-width 361px
+      max-width 361px
+    .input-container
+      min-width 114px
+      
+      label
+        left 29px
+      
+      input:focus ~ label, input:valid ~ label
+        left 125px
+  
+  &.group-3
+    height 54px
+    width 545px
+    .input-description
+      min-width 431px
+      max-width 431px
+    .input-container
+      label
+        left 40px
+      
+      input:focus ~ label, input:valid ~ label
+        left 102px
+  
+  &.group-4
+    .input-description
+      min-width 370px
+      max-width 370px
+  &.group-5
+    .input-description
+      min-width 231px
+      max-width 231px
+    .input-container
+      min-width 90px
+      label
+        left 40px
+      
+      input:focus ~ label, input:valid ~ label
+        left 102px
+  &.group-6
+    .input-description
+      min-width 245px
+      max-width 245px
+  &.group-7
+    min-width 193px
+    width 193px
+    .input-description
+      min-width 79px
+      max-width 79px
+    .input-container 
+      input
+        background-color #F5F5F5
+        color #9b9b9b
+      label
+        min-width 51px
+        left 21px
+  &.group-8
+    width 512px
+    .input-description
+      min-width 267px
+      max-width 267px
+    .input-container
+      width 138px
+      
+  &.button-5
+    .input-description
+      min-width 190px
+    .input-container
+      min-width 127px
+  
+  &.button-6
+    .input-description
+      min-width 209px
+    .input-container
+      min-width 127px
+      
+  &.group-button
+    height 38px
+    .input-description
+      min-width 395px
+
+.toggle-btn
+  display inline-block
+  width 151px
+  position relative
+
+  button
+    background-color #fff
+    border 2px solid #dedede
+    width 76px
+    height 38px
+    margin 0 -6px 0 0
+    border-radius 1px
+    outline none
+    transition .3s color ease
+
+    &.yes
+      color #9b9b9b
+
+    &.no
+      color #bb0150
+
+  input:checked ~ 
+    .slider
+      left 3px
+  
+    button
+      &.yes
+        color #bb0150
+  
+      &.no
+        color #9b9b9b
+.slider
+  width 76px
+  height 38px
+  border 2px solid #bb0150
+  position absolute
+  top 0
+  left 76px
+  border-radius 1px
+  pointer-events none
+  transition .3s left ease
