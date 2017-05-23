@@ -1,0 +1,99 @@
+.info-row
+  min-width 287px
+  height 38px
+  font-size .83em
+  letter-spacing -.4px
+  margin-bottom 15px
+  display flex
+  align-items center
+  padding-left 11.13%
+  padding-right 19.14%
+  
+  &.first
+    margin-top 40px
+  
+  &.button
+    height 34px
+    margin 0
+    margin-top 50px
+    justify-content flex-end
+    
+  .input-description
+    display inline-block
+    margin-right 23px
+    min-width 160px
+    text-align right
+    color #4a4a4a
+  
+.input-container
+  display inline-block
+  width 77.2%
+  max-width 600px
+
+  &.zip-code
+    width 90px
+  
+  &.select-container
+    min-width 190px
+    width auto
+  
+  input[type="text"]
+    box-sizing border-box
+    height 38px
+    width 100%
+    border 1px solid #dedede  
+    border-radius 1px
+    color #9b9b9b
+    padding 11px 20px
+    
+    &::placeholder
+      color #dedede
+
+.info-divider
+  width 88px
+  height 1px
+  background-color #dedede
+  display block
+  margin-left auto
+  margin-right auto
+  margin-top 35px
+  margin-bottom 35px
+
+.kerma-button 
+  button
+    width 127px
+    height 38px
+    padding 10px 20px
+    color #ffffff
+    font-size 1em
+    background-color #BB0150
+    border none
+    outline 0
+    cursor pointer
+    border-radius 1px
+    transition .2s
+    will-change transform
+  
+  &:active
+    transform scale(.95)
+    
+select
+  box-sizing border-box
+  height 38px
+  width 100%
+  border 1px solid #dedede  
+  border-radius 1px
+  padding 8px 20px
+  padding-right 25px
+  appearance none
+  cursor pointer
+  color #dedede
+  background url('src/assets/images/selectbackground.png')
+  background-position right center
+  background-repeat no-repeat
+
+  option
+    color #9b9b9b
+    
+  &:active
+    color #dedede
