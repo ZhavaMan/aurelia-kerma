@@ -1,10 +1,11 @@
 <template>
+<require from="../../main.css"></require>
   <div id="page">
     <header class="login-header">
       <div class="container">
         <a href="/">
           <div class="logo-container">
-            <img src="./img/kp-logo-standard-new@3x.jpg" alt="Kerma Partners Logo">
+            <img src="./src/assets/images/kp-logo-standard-new@3x.jpg" alt="Kerma Partners Logo">
           </div>
         </a>
       </div>
@@ -13,11 +14,12 @@
       <div class="login-container">
         <div class="login-content">
           <h1 class="kerma-fonts-opensans-light">Inicio de sesión</h1>
-          <form action="">
+          <form action="" submit.delegate="login()">
             <div class="login-fields">
-              <input class="kerma-fonts-opensans-light" type="text" placeholder="Correo electrónico">
-              <input class="kerma-fonts-opensans-light" type="password" placeholder="Contraseña">
+              <input class="kerma-fonts-opensans-light" name="user" type="text" placeholder="Correo electrónico" value.bind="username">
+              <input class="kerma-fonts-opensans-light" name="password" type="password" placeholder="Contraseña" value.bind="password">
               <div class="forgot-password kerma-fonts-opensans"><span>¿Olvidaste tu contraseña?</span></div>
+              <span class="error">${error}</span>
             </div>              
             <div class="kerma-button kerma-fonts-opensans">
               <button>Iniciar sesión</button>
