@@ -9,6 +9,17 @@
   <h1 class="kerma-fonts-opensans-light">Ingresos</h1>
   <h2 class="kerma-fonts-opensans-light">Ingresos Cobranza</h2>
   <form action="">
+    <!--Reapeter-->
+    <div repeat.for="question of questions" class="income-row first">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="real-income">${question.name}</label>
+      </div>
+      <div class="input-container">
+        <input name="real-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">USD</label>
+      </div>
+    </div>
+    <!--Reapeter-->
     <div class="income-row first">
       <div class="input-description">
         <label class="kerma-fonts-opensans" for="real-income">Ingresos Reales 2016</label>
