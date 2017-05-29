@@ -1,0 +1,144 @@
+<template>
+  <div class="step-bubbles kerma-fonts-opensans">
+    <div class="bubble ">1</div>
+    <div class="linkage"></div>
+    <div class="bubble ">2</div>
+    <div class="linkage"></div>
+    <div class="bubble step-in">3</div>
+  </div>
+  <h1 class="kerma-fonts-opensans-light">Oficinas</h1>
+  <h2 class="kerma-fonts-opensans-light">Ingresos Cobranza</h2>
+  <form action="">
+    <div class="income-row group-6 first">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="real-income">¿Cuánto pagan de renta mensualmente? 
+(Sin incluir el mantenimiento)</label>
+      </div>
+      <div class="input-container usd">
+        <input name="real-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">USD</label>
+        <div class="tool-tip kerma-fonts-opensans-bold">?</div>
+        <div class="tool-tip-content">
+          <p class="kerma-fonts-opensans">No tomar en cuenta el <strong>Subarrendamiento</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">¿Cuánto pagan de mantenimiento de oficinas mensualmente?</label>
+      </div>
+      <div class="input-container usd">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">USD</label>
+      </div>
+    </div>
+    <div class="income-row">
+      <div class="info-divider"></div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">¿Cuántos lugares en sala de juntas tienen?</label>
+      </div>
+      <div class="input-container percentage">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">#</label>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Área en m² rentados por el despacho</label>
+      </div>
+      <div class="input-container sqrmtrs">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Área en m² utilizada <br> (descontando reserva para crecimiento)</label>
+      </div>
+      <div class="input-container sqrmtrs">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+        <div class="tool-tip kerma-fonts-opensans-bold">?</div>
+        <div class="tool-tip-content">
+          <p class="kerma-fonts-opensans">No tomar en cuenta el <strong>Subarrendamiento</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Área en m² de sala de juntas</label>
+      </div>
+      <div class="input-container sqrmtrs">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Área en m² de áreas comunes</label>
+      </div>
+      <div class="input-container sqrmtrs">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+      </div>
+    </div>
+    <div class="income-row">
+        <div class="info-divider"></div>
+    </div>
+    <div class="income-row group-7">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Costo por m²</label>
+      </div>
+      <div class="input-container percentage">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required disabled>
+        <label class="kerma-fonts-opensans">200 USD</label>
+      </div>
+    </div>
+    <div class="income-row">
+      <div class="info-divider"></div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Promedio en m² en oficina de socios</label>
+      </div>
+      <div class="input-container sqrmtrs ">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+      </div>
+    </div>
+    <div class="income-row group-6">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Promedio en m² en oficina de abogados</label>
+      </div>
+      <div class="input-container sqrmtrs ">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">m²</label>
+      </div>
+    </div>
+    <div class="income-row group-8">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="budgeted-income">¿Utiliza privados compartidos para abogados?</label>
+      </div>
+      <div class="input-container">
+        <div class="toggle-btn kerma-fonts-opensans">
+          <input type="radio" name="toggle" value="yes" hidden>
+          <div class="slider"></div>
+          <button type="button" class="yes">SÍ</button>
+          <button type="button" class="no">NO</button>
+        </div>
+      </div>
+    </div>
+    <div class="income-row button-6 last">
+      <div class="input-description">
+        
+      </div>
+      <div class="input-container">
+        <div class="kerma-button kerma-fonts-opensans">
+          <button>Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</template>
