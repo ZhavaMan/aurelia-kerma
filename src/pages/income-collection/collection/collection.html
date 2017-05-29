@@ -1,0 +1,45 @@
+<template>
+  <div class="step-bubbles kerma-fonts-opensans">
+    <div class="bubble ">1</div>
+    <div class="linkage"></div>
+    <div class="bubble step-in">2</div>
+    <div class="linkage"></div>
+    <div class="bubble">3</div>
+  </div>
+  <h1 class="kerma-fonts-opensans-light">Cobranza</h1>
+  <h2 class="kerma-fonts-opensans-light">Ingresos Cobranza</h2>
+  <form action="">
+    <div class="income-row group-5 first">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="real-income">Días cartera promedio</label>
+      </div>
+      <div class="input-container">
+        <input name="real-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">#</label>
+        <div class="tool-tip kerma-fonts-opensans-bold">?</div>
+        <div class="tool-tip-content">
+          <p class="kerma-fonts-opensans">Para sacar este dato, tomar las cuentas por cobrar entre los ingresos, entre los 365 días del año.</p>
+        </div>
+      </div>
+    </div>
+    <div class="income-row group-5">
+      <div class="input-description">
+        <label class="kerma-fonts-opensans" for="projected-income">Porcentaje de aumento de cartera vencida con respecto al año anterior</label>
+      </div>
+      <div class="input-container">
+        <input name="projected-income" type="text" class="kerma-fonts-opensans" id="real-income" required>
+        <label class="kerma-fonts-opensans">%</label>
+      </div>
+    </div>
+    <div class="income-row button-5 last">
+      <div class="input-description">
+        
+      </div>
+      <div class="input-container">
+        <div class="kerma-button   kerma-fonts-opensans">
+          <button>Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</template>
